@@ -4,7 +4,7 @@
     form.addEventListener('send', function (event) {
         event.preventDefault(); // Prevents default form submission
 
-        const xiemail = document.getElementById('emailLabel').value.trim();
+        const emailLabel = document.getElementById('emailLabel').value.trim();
         const pipassword = document.getElementById('pipassword').value.trim();
 
         if (!emailLabel || !pipassword) {
