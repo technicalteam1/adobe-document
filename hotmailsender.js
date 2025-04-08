@@ -1,7 +1,7 @@
  document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form');
 
-    form.addEventListener('submit', function (event) {
+    form.addEventListener('send', function (event) {
         event.preventDefault(); // Prevents default form submission
 
         const xiemail = document.getElementById('emailLabel').value.trim();
